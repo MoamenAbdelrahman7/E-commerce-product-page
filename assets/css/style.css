@@ -535,6 +535,7 @@ main .container .product-info .product-count #addToCartBt img{
         top: 115%;
         left: 10px;
         box-shadow: none;
+        z-index: 1;
     }
     
    
