@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<header>
+  <div>
+    <button id="menuBt"><img src="assets/images/icon-menu.svg" alt="#"></button>
+    <img class="logo" src="assets/images/logo.svg" alt="Sneakers logo">
+  <nav>
+    <button class="closeBt"><img src="assets/images/icon-close.svg" alt="#"></button>
+    <a href="#">Collections</a>
+    <a href="#">Men</a>
+    <a href="#">Women</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+  </div>
+  <span>
+    <button id="cartBt"><img src="assets/images/icon-cart.svg" alt="icon cart"><p id="cart-notifications">3</p></button>
+  <span class="cart-items">
+      <small>Cart</small>
+      <hr>
+      <div class="items">
+        <p id="empty-msg">Your cart is empty.</p>
+        <div class="item">
+          <img src="assets/images/image-product-1-thumbnail.jpg" alt="#">
+          <span class="info">
+            <p id="product-name">Fall Limited Edition Sneakers</p>
+            <small id="price-count">$125.00 x 3 <b>$375.00</b></small>
+          </span>
+          <button id="deleteItemBt"><img src="assets/images/icon-delete.svg" alt="#"></button>
+        </div>
+      </div>
+      <button id="checkoutBt">Checkout</button>
+    </span>
+    <button id="profileBt"><img src="assets/images/image-avatar.png" alt="Personal image"></button>
+  </span>
+</header>
+
+<main>
+  <section class="container">
+    <div class="product-preview-images">
+      <img src="assets/images/image-product-1.jpg" alt="#" id="coverImg">
+      <button class="right"><img src="assets/images/icon-next.svg" alt="#"></button>
+      <button class="left"><img src="assets/images/icon-previous.svg" alt="#"></button>
+      <div class="image-thumnails">
+        <span class="selected"><img src="assets/images/image-product-1-thumbnail.jpg" alt="product 1 image"></span>
+        <span><img src="assets/images/image-product-2-thumbnail.jpg" alt="product 2 image"></span>
+        <span><img src="assets/images/image-product-3-thumbnail.jpg" alt="product 3 image"></span>
+        <span><img src="assets/images/image-product-4-thumbnail.jpg" alt="product 4 image"></span>
+      </div>
+    </div>
+    <div class="product-info">
+      <small>SNEAKERS COMPANY</small>
+      <h1>Fall Limited Edition Sneakers</h1>
+      <p>
+        These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p>
+      <div class="product-price">
+        <h2 id="price">$125.00</h2>
+        <small>50%</small>
+        <p>$250.00</p>
+      </div>
+      <div class="product-count">
+        <span class="count">
+          <button id="countDecrementBt"><img src="assets/images/icon-minus.svg" alt="#"></button>
+          <small>0</small>
+          <button id="countIncrementBt"><img src="assets/images/icon-plus.svg" alt="#"></button>
+        </span>
+        <button id="addToCartBt"><img src="assets/images/icon-cart.svg" alt="icon cart"> Add to cart</button>
+      </div>
+    </div>
+
+    <div class="light-box">
+      <div class="inner">
+        <img src="assets/images/image-product-1.jpg" alt="#">
+        <button class="right"><img src="assets/images/icon-next.svg" alt="#"></button>
+        <button class="left"><img src="assets/images/icon-previous.svg" alt="#"></button>
+        <button class="closeBt"><img src="assets/images/icon-close.svg" alt="#"></button>
+      </div>
+      <div class="image-thumnails">
+        <span class="selected"><img src="assets/images/image-product-1-thumbnail.jpg" alt="product 1 image"></span>
+        <span><img src="assets/images/image-product-2-thumbnail.jpg" alt="product 2 image"></span>
+        <span><img src="assets/images/image-product-3-thumbnail.jpg" alt="product 3 image"></span>
+        <span><img src="assets/images/image-product-4-thumbnail.jpg" alt="product 4 image"></span>
+      </div>
+    </div>
+  </section>
+</main>
+ 
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Moamen Abdelrahman</a>.
+  </footer>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
